@@ -1,11 +1,11 @@
-#!/bin/python3
+
 
 from random import choice
 
-#create a list of players from a file
-players = ["jamie","test"]
-
-print('Players:', players)
+players = []
+file = open('players.txt', 'r')
+players = file.read().splitlines()
+print('player names:', players)
 
 
 teamNames = []
